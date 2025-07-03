@@ -13,7 +13,32 @@ body {
     box-sizing: border-box;
     /* Include padding in element's total width and height */
 }
+.myname {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
 
+  border: 2px solid black;
+  padding: 20px;
+  background-color: white;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.page-content {
+  padding-top: 100px; /* نفس ارتفاع .myname تقريبًا */
+}
+
+@media (max-width: 768px) {
+  .myname {
+    font-size: 4vw;
+    padding: 4vw;
+    width: 90vw;
+  }
+}
 /* Container for the grid */
 .grid-container {
     display: grid;
@@ -102,60 +127,155 @@ body {
 
 /* Specific card colors */
 .card-blue {
-    background-color: #bfdbfe;
-    color: #1e40af;
+  background-color: #bfdbfe;
+  color: #1e40af;
 }
 
-/* Light blue */
 .card-green {
-    background-color: #d1fae5;
-    color: #065f46;
+  background-color: #d1fae5;
+  color: #065f46;
 }
 
-/* Light green */
 .card-purple {
-    background-color: #e9d5ff;
-    color: #6b21a8;
+  background-color: #e9d5ff;
+  color: #6b21a8;
 }
 
-/* Light purple */
 .card-yellow {
-    background-color: #fef08a;
-    color: #a16207;
+  background-color: #fef08a;
+  color: #a16207;
 }
 
-/* Light yellow */
 .card-red {
-    background-color: #fee2e2;
-    color: #991b1b;
+  background-color: #fee2e2;
+  color: #991b1b;
 }
 
-/* Light red */
 .card-orange {
-    background-color: #fed7aa;
-    color: #c2410c;
+  background-color: #fed7aa;
+  color: #c2410c;
 }
 
-/* Light orange */
 .card-teal {
-    background-color: #ccfbf1;
-    color: #0f766e;
+  background-color: #ccfbf1;
+  color: #0f766e;
 }
 
-/* Light teal */
 .card-pink {
-    background-color: #fbcfe8;
-    color: #be185d;
+  background-color: #fbcfe8;
+  color: #be185d;
 }
 
-/* Light pink */
 .card-indigo {
-    background-color: #c7d2fe;
-    color: #4338ca;
+  background-color: #c7d2fe;
+  color: #4338ca;
 }
 
-/* Light indigo */
 .card-lime {
-    background-color: #d9f99d;
-    color: #4d7c0f;
+  background-color: #d9f99d;
+  color: #4d7c0f;
+}
+
+@media (max-width: 768px) {
+  .card-blue {
+    background-color: #93c5fd;
+    color: #1e3a8a;
+  }
+
+  .card-green {
+    background-color: #bbf7d0;
+    color: #064e3b;
+  }
+
+  .card-purple {
+    background-color: #d8b4fe;
+    color: #5b21b6;
+  }
+
+  .card-yellow {
+    background-color: #fef3c7;
+    color: #854d0e;
+  }
+
+  .card-red {
+    background-color: #fecaca;
+    color: #7f1d1d;
+  }
+
+  .card-orange {
+    background-color: #fdba74;
+    color: #9a3412;
+  }
+
+  .card-teal {
+    background-color: #095080;
+    color: #0f766e;
+  }
+
+  .card-pink {
+    background-color: #2b071b;
+    color: #be185d;
+  }
+
+  .card-indigo {
+    background-color: #a5b4fc;
+    color: #3730a3;
+  }
+
+  .card-lime {
+    background-color: #bbf7d0;
+    color: #166534;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-blue {
+    background-color: #60a5fa;
+    color: #1d4ed8;
+  }
+
+  .card-green {
+    background-color: #6ee7b7;
+    color: #047857;
+  }
+
+  .card-purple {
+    background-color: #c084fc;
+    color: #7e22ce;
+  }
+
+  .card-yellow {
+    background-color: #fde047;
+    color: #a16207;
+  }
+
+  .card-red {
+    background-color: #fca5a5;
+    color: #b91c1c;
+  }
+
+  .card-orange {
+    background-color: #fb923c;
+    color: #ea580c;
+  }
+
+  .card-teal {
+    background-color: #5eead4;
+    color: #115e59;
+  }
+
+  .card-pink {
+    background-color: #f9a8d4;
+    color: #9d174d;
+  }
+
+  .card-indigo {
+    background-color: #a5b4fc;
+    color: #3730a3;
+  }
+
+  .card-lime {
+    background-color: #facc15;
+    color: #78350f;
+  }
 }
